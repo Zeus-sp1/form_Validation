@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5699cb123f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>Contact Form </title>
+</head>
+<body>
+    <header>
+        <div class="hb-btn"><i class="fa-solid fa-align-left"></i></div>
+        <div><i class="close" style="color: red; margin-left: 20px; display: none;">X</i></div>
+        <div class="cp-logo">
+            <h2>Registration</h2>
+        </div>
+    </header>
+    <div id="ctn-nav-btn">
+        <div class="nav-btn">
+            <i class="fa-solid fa-house-chimney-window"></i>
+        </div>
+        <div class="nav-btn">
+            <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <div class="nav-btn">
+            <i class="fa-brands fa-amazon-pay"></i>
+        </div>
+        <div class="nav-btn">
+            <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="nav-btn">
+            <i class="fa-regular fa-address-card"></i>
+        </div>
+    </div>
+    <section class="m-5 d-md-flex justify-content-center">
+        <form id="form" name="registration-form" action="">
+            <div class="input-section">
+                <h3 id="username">Username<span>*</span> </h3>
+                <input type="text" name="username" id="user-section" class="ipt-section">
+                <p class="error-message" id="user-error" style="color: red;">error message</p>
+            </div>
+            <div class="input-section">
+               <h3 id="email"> Email Address<span>*</span> </h3>
+                <input type="text" name="email" class="ipt-section" id="email-section" placeholder="input valid email-address">
+                <p class="error-message" style="color: red;">error message</p>
+            </div>
+            <div class="input-section">
+                <h3 id="phone-number"> Phone number<span>*</span></h3>
+                <input type="text" name="phone" class="ipt-section" id="phone" placeholder="input valid phone number">
+                <p class="error-message" style="color: red;">error message</p>
+            </div>
+            <div class="input-section">
+                <h3 id="password">Password<span>*</span> </h3>
+                <div class='password-section'>
+                <input type="password" name="password" id="secret-key" >
+                <i id="visibility" ><span id="icon" class="material-symbols-outlined">visibility</span></i>
+                <p class="error-message" style="color: red; ">error message</p>
+                </div>
+            </div>
+            <div class="input-section">
+                <h3 id="confirm-password">Confirm Password<span>*</span> </h3>
+                <input type="password" name="confirm-password" id = "cfm-secret-key">
+                <p class="error-message" style="color: red;">error message</p>
+            </div>
+            <div class="input-section">
+                <label for="gender">Select Gender<span>*</span></label>
+                <select name="select" id="gender">
+                    <option value="">choose gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <p class="error-message" style="color: red;">error message</p>
+            </div>
+            <div class="input-section">
+                <input type="submit" value="Register" class="button">
+            </div>
+        </form>
+    </section>
+    <script src="Assets/script.js"></script>
+</body>
+</html>
